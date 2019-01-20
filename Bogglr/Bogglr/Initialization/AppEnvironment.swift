@@ -24,8 +24,12 @@ final class AppEnvironment {
             self?.dictionary = data.components(separatedBy: .newlines)
         })
 
+        self.lettersMatrix = [["c","a","t"],
+                              ["d","u","s"],
+                              ["l","n","g"],]
+        
         // build the letters matrix array from the the "board" text file
-        readTextFile(from: "board", parseClosure: {  [weak self]  data in
+       /* readTextFile(from: "board", parseClosure: {  [weak self]  data in
             let letters = CharacterSet.letters
 
             let rows = data.components(separatedBy: .newlines)
@@ -52,7 +56,7 @@ final class AppEnvironment {
                     self?.lettersMatrix.append(rowArray)
                 }
             }
-        })
+        })*/
     }
 
     /// Read from a text file stored in the app bundle
