@@ -19,8 +19,8 @@
 		923602E52041059300EFE035 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923602E12041059300EFE035 /* TrieNode.swift */; };
 		923602E62041059300EFE035 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923602E22041059300EFE035 /* Board.swift */; };
 		923602EA2041127F00EFE035 /* BoggleSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923602E92041127F00EFE035 /* BoggleSolver.swift */; };
-		923A8F0F2041D38B0006BFC8 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 923A8F0E2041D38B0006BFC8 /* dictionary.txt */; };
 		923A8F112041D4920006BFC8 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8F102041D4920006BFC8 /* AppEnvironment.swift */; };
+		992BE11D21F52FC500178312 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 992BE11C21F52FC500178312 /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,8 @@
 		923602E12041059300EFE035 /* TrieNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		923602E22041059300EFE035 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		923602E92041127F00EFE035 /* BoggleSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoggleSolver.swift; sourceTree = "<group>"; };
-		923A8F0E2041D38B0006BFC8 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 		923A8F102041D4920006BFC8 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		992BE11C21F52FC500178312 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		923A8F0D2041D26F0006BFC8 /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
-				923A8F0E2041D38B0006BFC8 /* dictionary.txt */,
+				992BE11C21F52FC500178312 /* dictionary.txt */,
 				92285F6F204332EE006D5367 /* board.txt */,
 				923A8F102041D4920006BFC8 /* AppEnvironment.swift */,
 			);
@@ -228,9 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92285F70204332EE006D5367 /* board.txt in Resources */,
+				992BE11D21F52FC500178312 /* dictionary.txt in Resources */,
 				923602C22040F9DE00EFE035 /* LaunchScreen.storyboard in Resources */,
 				923602BF2040F9DE00EFE035 /* Assets.xcassets in Resources */,
-				923A8F0F2041D38B0006BFC8 /* dictionary.txt in Resources */,
 				923602BD2040F9DE00EFE035 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

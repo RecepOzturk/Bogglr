@@ -24,9 +24,10 @@ final class AppEnvironment {
             self?.dictionary = data.components(separatedBy: .newlines)
         })
 
-        self.lettersMatrix = [["c","a","t"],
-                              ["d","u","s"],
-                              ["l","n","g"],]
+        self.lettersMatrix = [["ş","a","l","ç"],
+                              ["t","i","ö","r"],
+                              ["r","n","k","ı"],
+                              ["u","s","a","p"]]
         
         // build the letters matrix array from the the "board" text file
        /* readTextFile(from: "board", parseClosure: {  [weak self]  data in
