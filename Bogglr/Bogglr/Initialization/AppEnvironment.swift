@@ -13,7 +13,7 @@ final class AppEnvironment {
     static var shared: AppEnvironment!
 
     /// `Array` of `Character` `Array`s that will be used to construct the Boggle board
-    private(set) var lettersMatrix = [[Character]]()
+    private(set) var lettersMatrix = [[Character]](repeating: Array(repeating:" ", count:5), count:5)
 
     /// `Array` of words that make up our dictionary
     private(set) var dictionary = [String]()
@@ -24,10 +24,13 @@ final class AppEnvironment {
             self?.dictionary = data.components(separatedBy: .newlines)
         })
 
-        self.lettersMatrix = [["ş","a","l","ç"],
+        
+        createMatrix()
+        
+        /*self.lettersMatrix = [["ş","a","l","ç"],
                               ["t","i","ö","r"],
                               ["r","n","k","ı"],
-                              ["u","s","a","p"]]
+                              ["u","s","a","p"]]*/
         
         // build the letters matrix array from the the "board" text file
        /* readTextFile(from: "board", parseClosure: {  [weak self]  data in
@@ -74,6 +77,16 @@ final class AppEnvironment {
             }
         }  catch {
             print(error)
+        }
+    }
+    private func createMatrix(){
+        let characters = [Character] (arrayLiteral: "a","b","c","ç","d","e","f","g","h","a","e","ı","i","j","k","l","m","n","o","ö","p","r","s","u","ş","t","u","ü","v","y","z")
+        
+        for i in 0 ..< 5{
+            for j in 0 ..< 5{
+                let rand = Int.random(in: 0 ... characters.count-1)
+              self.lettersMatrix[i][j] = characters[rand]
+            }
         }
     }
 }
