@@ -23,13 +23,23 @@ class ViewController: UIViewController {
         validWords.forEach { print($0) }
         print("number of valid words = \(validWords.count)")
         print("********************************************")
+        let find = isThere(arr: validWords, word: "cam")
+        print(find)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    public func isThere(arr :[String], word: String)->Bool {
+        for words in arr {
+            if(words == word){
+              return true
+            }
+        }
+        return false
+    }
 
 }
 
